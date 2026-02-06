@@ -1,0 +1,314 @@
+/* 
+.stories-page {
+  display: flex;
+  padding: 40px 60px;
+  background: #ffffff;
+}
+
+
+
+.stories-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  
+}
+
+
+
+.story-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  
+
+  
+  border: 1px solid #e6e6e6;
+
+  border-radius: 12px;
+
+  padding: 22px 24px;
+  background: #ffffff;
+
+  transition: 0.2s ease;
+}
+
+
+.story-card:hover {
+  background: #fdfdfd;
+  border-color: #d8d8d8;
+     border: 2px solid #000;
+}
+
+
+
+
+.story-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-icon {
+  font-size: 26px;
+  color: #444;
+}
+
+.author-name {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.story-meta {
+  font-size: 13px;
+  color: #777;
+}
+
+
+.story-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+  line-height: 1.35;
+}
+
+
+
+.story-description {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.65;
+}
+
+
+
+.story-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.story-tag {
+  font-size: 13px;
+  color: #555;
+  background: #f2f2f2;
+  padding: 5px 12px;
+  border-radius: 16px;
+}
+
+.read-more-btn {
+  border: none;
+  background: none;
+  font-size: 15px;
+  color: #060606;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.read-more-btn:hover {
+  opacity: 0.7;
+}
+
+
+
+@media (max-width: 768px) {
+  .stories-page {
+    padding: 20px;
+  }
+
+  .story-title {
+    font-size: 20px;
+  }
+}  */
+
+
+
+/* 
+.stories-page-heading {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000;
+} */
+
+
+
+
+
+/* =========================
+   STORIES PAGE WRAPPER
+   ========================= */
+.stories-wrapper {
+  display: flex;
+  flex-direction: column;  /* stack heading and stories vertically */
+  align-items: center;     /* center everything horizontally */
+  padding: 40px 60px;
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
+.stories-main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+/* =========================
+   PAGE HEADING
+   ========================= */
+.stories-heading {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+/* =========================
+   STORIES LIST
+   ========================= */
+.stories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* =========================
+   STORY CARD
+   ========================= */
+.story-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 22px 24px;
+  background: #ffffff;
+
+  transition: 0.3s ease;
+}
+
+.story-card:hover {
+  background: #fdfdfd;
+  border-color: #d8d8d8;
+  border: 2px solid #000;
+}
+
+/* =========================
+   STORY HEADER
+   ========================= */
+.story-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-icon {
+  font-size: 26px;
+  color: #444;
+}
+
+.author-name {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.story-meta {
+  font-size: 13px;
+  color: #777;
+}
+
+/* =========================
+   STORY TITLE
+   ========================= */
+.story-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+  line-height: 1.35;
+}
+
+/* =========================
+   STORY DESCRIPTION
+   ========================= */
+.story-description {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.65;
+}
+
+/* =========================
+   STORY FOOTER
+   ========================= */
+.story-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.story-tag {
+  font-size: 13px;
+  color: #555;
+  background: #f2f2f2;
+  padding: 5px 12px;
+  border-radius: 16px;
+}
+
+.read-more-btn {
+  border: none;
+  background: none;
+  font-size: 15px;
+  color: #060606;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.read-more-btn:hover {
+  opacity: 0.7;
+}
+
+/* =========================
+   EMPTY MESSAGE
+   ========================= */
+.empty-msg {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+  padding: 20px 0;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 768px) {
+  .stories-wrapper {
+    padding: 20px;
+  }
+
+  .stories-heading {
+    font-size: 28px;
+  }
+
+  .story-title {
+    font-size: 20px;
+  }
+
+  .story-description {
+    font-size: 15px;
+  }
+}
